@@ -1,0 +1,47 @@
+li{
+  display: block;
+  height: 30px;
+  padding: 5px;
+  width: 70px;
+  margin: 5px;
+  float: left;
+}
+
+ul{
+  position: relative;
+  float: left;
+  width: 270px;
+  background-color: #eee;
+  margin: 10px;
+  padding: 0px;
+  min-height: 20px;
+}
+
+#exampleDiv{
+  width: 320px;
+}
+
+
+#exampleDiv div{
+  width: 100px;
+  height: 50px;
+  background-color: purple;
+  margin: 5px;
+  float: left;
+}
+
+#example li{
+  background-color: green;  
+}
+
+#exampleWith li{
+  background-color: blue;
+}
+
+#exampleEmpty li{
+  background-color: yellow;
+}
+  
+.dnd-dragging{
+  background-color: white !important;
+}

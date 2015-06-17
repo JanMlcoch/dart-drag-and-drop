@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/drag_and_drop.css" />
+    <title>index</title>
+  </head>
+ 
+  <body>   
+    <h1>Drag and drop for dart with jQuery sorting style</h1>
+    
+    <h2>Example:</h2>
+    <ul id='example'>
+      <li>Položka 1</li>
+      <li>Položka 2</li>
+      <li>Položka 3</li>
+      <li>Položka 4</li>
+      <li>Položka 5</li>
+      <li>Položka 6</li>
+      <li>Položka 7</li>
+      <li>Položka 8</li>
+    </ul>
+    
+    <ul id='exampleWith'>
+      <li>Záložka 1</li>
+      <li>Záložka 2</li>
+      <li>Záložka 3</li>
+      <li>Záložka 4</li>
+      <li>Záložka 5</li>
+      <li>Položka 6</li>
+      <li>Položka 7</li>
+      <li>Položka 8</li>
+    </ul>
+   
+    </div>
+  
+    <div class='trash' style='width:100px; height: 100px; background-color: blue; float: left'><div></div></div>
+    
+   
+
+    <script type="application/dart" src="drag_and_drop.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
