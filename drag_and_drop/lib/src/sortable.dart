@@ -96,7 +96,11 @@ class Sortable{
       _pickedUpIndex = event.draggableElement.parent.children.indexOf(event.draggableElement);
     });
     _draggable.onDragEnd.listen((DraggableEvent event){
-      int pickedDownIndex = event.draggableElement == null ? null : event.draggableElement.parent.children.indexOf(event.draggableElement);
+      // in case of removing draggable element is pickedDownIndex set on 0
+      int pickedDownIndex = 0;
+      if(event.draggableElement.parent != null){
+        pickedDownIndex = event.draggableElement == null ? null : event.draggableElement.parent.children.indexOf(event.draggableElement);        
+      }
       if(_pickedUpIndex != pickedDownIndex && _onUpdate != null){
         _onUpdate.add(new SortableEvent(_pickedUpIndex,pickedDownIndex));
       }
